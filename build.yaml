@@ -12,6 +12,4 @@
 #     shield: reviung41
 #
 board: [ "nice_nano_v2" ]
-shield: [ "murphpad" ]
-include:
-        - board: s40nc
+shield: [ "nibble" ]
