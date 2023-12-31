@@ -1,0 +1,36 @@
+/*
+ * Copyright (c) 2023 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+&mt {
+    tapping-term-ms = <TAP_TERM>;
+    quick-tap-ms = <QUICK_TAP_TERM>;
+    flavor = "balanced";
+    require-prior-idle-ms = <COMBO_TIMEOUT>;
+};
+
+&lt {
+    tapping-term-ms = <TAP_TERM>;
+    quick-tap-ms = <QUICK_TAP_TERM>;
+    flavor = "balanced";
+    require-prior-idle-ms = <COMBO_TIMEOUT>;
+};
+
+/ {
+    behaviors {
+        mo_tog: behavior_mo_tog {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <TAP_TERM>;
+            bindings = <&mo>, <&tog>;
+        };
+        mouse_scroll: encoder_rotation_0 {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&mkp>, <&mkp>;
+        };
+    };
+};
