@@ -2,8 +2,12 @@ manifest:
   remotes:
     - name: lesshonor
       url-base: https://github.com/lesshonor
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
   projects:
     - name: uwu30-zmk-config
       remote: lesshonor
@@ -11,6 +15,22 @@ manifest:
       clone-depth: 1
     - name: mechwild-zmk-keyboards
       remote: lesshonor
+      revision: main
+      clone-depth: 1
+    - name: zmk-rgbled-widget2 # Will this one be loaded before or after the correct one?
+      url: https://github.com/caksoylar/zmk-rgbled-widget
+      revision: main
+      clone-depth: 1
+    - name: le-capybara-zmk-module
+      remote: petejohanson
+      revision: main
+      clone-depth: 1
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: main
+      clone-depth: 1
+    - name: 0-zmk-rgbled-widget # Will this one be loaded before or after caksoylar's?
+      url: https://github.com/caksoylar/zmk-rgbled-widget
       revision: main
       clone-depth: 1
     - name: zmk

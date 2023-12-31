@@ -19,6 +19,28 @@
 };
 
 / {
+    gpio_backlight: gpioleds {
+        status = "okay";
+        compatible = "gpio-leds";
+        gpio_led_0: gpio_led_0 {
+            gpios = <&blackpill 43 GPIO_ACTIVE_HIGH>;
+            label = "Top Indicator";
+        };
+        gpio_led_1: gpio_led_1 {
+            gpios = <&blackpill 45 GPIO_ACTIVE_HIGH>;
+            label = "Middle Indicator";
+        };
+        gpio_led_2: gpio_led_2 {
+            gpios = <&blackpill 46 GPIO_ACTIVE_HIGH>;
+            label = "Bottom Indicator";
+        };
+    };
+
+    sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&encoder>;
+        triggers-per-rotation = <20>;
+    };
 
     chosen { zmk,matrix_transform = &full_space_transform; };
 
