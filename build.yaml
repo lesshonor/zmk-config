@@ -10,5 +10,6 @@
 
 include:
   - board: s40nc
+  - board: sporkus_le_capybara
   - board: pillbug
-    shield: bb40
+    shield: bb40 rgbled_adapter
