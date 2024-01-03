@@ -17,22 +17,32 @@ manifest:
       remote: lesshonor
       revision: main
       clone-depth: 1
-    - name: zmk-rgbled-widget2 # Will this one be loaded before or after the correct one?
-      url: https://github.com/caksoylar/zmk-rgbled-widget
+
+    - name: vik-core-module
+      remote: petejohanson
       revision: main
       clone-depth: 1
+
+    - name: vik-controller-module
+      remote: petejohanson
+      revision: main
+      clone-depth: 1
+
+    - name: sadekbaroudi-keyboard-module
+      remote: petejohanson
+      revision: main
+      clone-depth: 1
+
     - name: le-capybara-zmk-module
       remote: petejohanson
       revision: main
       clone-depth: 1
+
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
       clone-depth: 1
-    - name: 0-zmk-rgbled-widget # Will this one be loaded before or after caksoylar's?
-      url: https://github.com/caksoylar/zmk-rgbled-widget
-      revision: main
-      clone-depth: 1
+
     - name: zmk
       remote: zmkfirmware
       revision: main

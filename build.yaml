@@ -1,6 +1,72 @@
 include:
+    # single board in main ZMK
   - board: s40nc
+
+    # single board in module only
+  - board: uwu30
+
+    # board half in main ZMK
+  - board: glove80_lh
+
+    # board in main ZMK
+    # shield in main ZMK
+  - board: nice_nano_v2
+    shield: contra
+
+    # board in main ZMK
+    # shield half in main ZMK, with versioning
+  - board: nice_nano_v2
+    shield: kyria_rev2_left
+
+    # board in main ZMK
+    # shield in module only
+  - board: nice_nano_v2
+    shield: sadekbaroudi_ffkb_lite
+
+    # board in main ZMK
+    # shield half in module only
+  - board: nice_nano_v2
+    shield: mokulua_left
+
+    # board in main ZMK
+    # shield in user config only
+    # board in main ZMK
+    # shield half in user config only
+
+    # board in main ZMK
+    # multiple shields in main ZMK, with versioning
+  - board: nice_nano_v2
+    shield: kyria_rev3_left nice_view_adapter nice_view
+
+    # board in main ZMK
+    # one shield in ZMK, one in module
+  - board: seeeduino_xiao_ble
+    shield: hummingbird rgbled_adapter
+
+    # board in main ZMK
+    # shield in main ZMK and module
+  - board: nice_nano_v2
+    shield: murphpad
+
+    # single board in module with additional drivers
   - board: sporkus_le_capybara
+
+    # board in both main ZMK and module
+    # shield only in module
+  - board: pillbug
+    shield: waka60
+
+    # board version only in module
+    # shield only in module
+  - board: pillbug@0.1
+    shield: obe
+
+    # board in both main ZMK and module
+    # shields in module and user config
   - board: pillbug
     shield: bb40 rgbled_adapter
-  - board: uwu30
+
+    # board in module only
+    # shield half in module only
+  - board: sadekbaroudi_svlinky
+    shield: kyria_left
