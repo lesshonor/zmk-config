@@ -40,8 +40,8 @@ manifest:
       clone-depth: 1
 
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: lesshonor
+      revision: reorder-keymap-module
       clone-depth: 1
       import: app/west.yml
   self:

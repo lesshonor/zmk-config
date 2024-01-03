@@ -21,6 +21,11 @@
 };
 
 / {
+    aliases {
+        led-red = &gpio_led_0;
+        led-green = &gpio_led_1;
+        led-blue = &gpio_led_2;
+    };
     gpio_backlight: gpioleds {
         status = "okay";
         compatible = "gpio-leds";
