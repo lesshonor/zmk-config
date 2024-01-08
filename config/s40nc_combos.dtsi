@@ -1,0 +1,82 @@
+/*
+ * Copyright (c) 2023 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_dash {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <14 15>;
+            bindings = <&kp MINUS>;
+        };
+        combo_tab {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <15 16>;
+            bindings = <&kp TAB>;
+        };
+        combo_enter {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <19 20>;
+            bindings = <&kp ENTER>;
+        };
+        combo_quote {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <20 21>;
+            bindings = <&kp SQT>;
+        };
+        combo_excl {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <24 25>;
+            bindings = <&kp EXCL>;
+        };
+        combo_grave {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <25 26>;
+            bindings = <&kp GRAVE>;
+        };
+        combo_esc {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <26 27>;
+            bindings = <&kp ESC>;
+        };
+        combo_bspc {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <30 31>;
+            bindings = <&kp BSPC>;
+        };
+        combo_del {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <30 31>;
+            layers = <1>;
+            bindings = <&kp DEL>;
+        };
+        combo_caps {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <15 20>;
+            bindings = <&kp CAPS>;
+        };
+        combo_backslash {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <31 32>;
+            bindings = <&kp BSLH>;
+        };
+        combo_enclose_paren {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <27 30>;
+            bindings = <&enclose_paren>;
+        };
+        combo_enclose_bracket {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <26 31>;
+            bindings = <&enclose_bracket>;
+        };
+        combo_enclose_brace {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <25 32>;
+            bindings = <&enclose_brace>;
+        };
+    };
+};
