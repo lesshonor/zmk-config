@@ -1,11 +1,24 @@
 manifest:
   remotes:
+    - name: olivia
+      url-base: https://github.com/ojthetiny
+    - name: lesshonor
+      url-base: https://github.com/lesshonor
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
   projects:
+    - name: zmk-config
+      remote: olivia
+      revision: master
+      clone-depth: 1
+    - name: mechwild-zmk-keyboards
+      remote: lesshonor
+      revision: main
+      clone-depth: 1
     - name: zmk
       remote: zmkfirmware
       revision: main
+      clone-depth: 1
       import: app/west.yml
   self:
     path: config
