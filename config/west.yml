@@ -15,7 +15,7 @@ manifest:
       clone-depth: 1
     - name: mechwild-zmk-keyboards
       remote: lesshonor
-      revision: main
+      revision: zephyr-3.5
       clone-depth: 1
 
     - name: vik-core-module
@@ -45,7 +45,7 @@ manifest:
 
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: pull/1995/merge
       clone-depth: 1
       import: app/west.yml
   self:
