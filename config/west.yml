@@ -2,10 +2,13 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: lesshonor
+      url-base: https://github.com/lesshonor
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: lesshonor
+      revision: cirque
+      clone-depth: 1
       import: app/west.yml
   self:
     path: config
