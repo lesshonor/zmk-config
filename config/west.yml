@@ -11,6 +11,10 @@ manifest:
       remote: olivia
       revision: master
       clone-depth: 1
+    - name: stewardship-zmk-module
+      remote: lesshonor
+      revision: main
+      clone-depth: 1
     - name: mechwild-zmk-keyboards
       remote: lesshonor
       revision: main
