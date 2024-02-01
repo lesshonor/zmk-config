@@ -5,6 +5,9 @@ manifest:
     - name: lesshonor
       url-base: https://github.com/lesshonor
   projects:
+    - name: mechwild-zmk-keyboards
+      remote: lesshonor
+      revision: puckbuddy
     - name: zmk
       remote: lesshonor
       revision: cirque
