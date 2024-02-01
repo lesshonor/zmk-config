@@ -12,3 +12,20 @@
 #     shield: reviung41
 #
 ---
+include:
+  - board: blackpill_f401cc
+    shield: sugarglider
+  - board: blackpill_f401ce
+    shield: sugarglider
+  - board: blackpill_f411ce
+    shield: sugarglider
+  - board: pillbug
+    shield: sugarglider
+  - board: blackpill_f401cc
+    shield: puckbuddy
+  - board: blackpill_f401ce
+    shield: puckbuddy
+  - board: blackpill_f411ce
+    shield: puckbuddy
+  - board: pillbug
+    shield: puckbuddy
