@@ -3,6 +3,9 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
   projects:
+    - name: stewardship
+      url: https://github.com/lesshonor/stewardship-zmk-module
+      revision: humble40
     - name: zmk
       remote: zmkfirmware
       revision: main
