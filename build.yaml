@@ -1,14 +1,32 @@
-# This file generates the GitHub Actions matrix
-# For simple board + shield combinations, add them
-# to the top level board and shield arrays, for more
-# control, add individual board + shield combinations to
-# the `include` property, e.g:
-#
-# board: [ "nice_nano_v2" ]
-# shield: [ "corne_left", "corne_right" ]
-# include:
-#   - board: bdn9_rev2
-#   - board: nice_nano_v2
-#     shield: reviung41
-#
 ---
+include:
+  - board: s40nc
+  - board: le_jlwffre
+  - board: uwu30
+  - board: qaz_rp2040
+  - board: pillbug
+    shield: waka60
+  - board: pillbug
+    shield: bb40
+  - board: pillbug
+    shield: bb40
+    cmake-args: "'-DCONFIG_ZMK_KEYBOARD_NAME=\"BB40 (Alien)\"'"
+    artifact-name: bb40-alien
+  - board: pillbug
+    shield: bb40
+    cmake-args: "'-DCONFIG_ZMK_KEYBOARD_NAME=\"BB40 (Pink)\"'"
+    artifact-name: bb40-pink
+  - board: pillbug
+    shield: bb40
+    cmake-args: "'-DCONFIG_ZMK_KEYBOARD_NAME=\"BB40 (Serika)\"'"
+    artifact-name: bb40-serika
+  - board: pillbug
+    shield: settings_reset
+  - board: s40nc
+    shield: settings_reset
+  - board: le_jlwffre
+    shield: settings_reset
+  - board: uwu30
+    shield: settings_reset
+  - board: qaz_rp2040
+    shield: settings_reset
