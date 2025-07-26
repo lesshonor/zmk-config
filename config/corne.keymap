@@ -10,10 +10,16 @@
 
 &pro_micro_i2c {
 	compatible = "nordic,nrf-twim";
-	zephyr,concat-buf-size = <257>; /* lmao */
-	zephyr,flash-buf-max-size = <257>;
+	zephyr,concat-buf-size = <264>;
+	zephyr,flash-buf-max-size = <264>;
 };
 
+/*
+&oled {
+	height = <64>;
+	multiplex-ratio = <63>;
+};
+*/
 / {
     chosen {
         zmk,physical-layout = &foostan_corne_5col_layout;
