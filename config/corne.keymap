@@ -10,8 +10,8 @@
 
 &pro_micro_i2c {
 	compatible = "nordic,nrf-twim";
-	zephyr,concat-buf-size = <272>;
-	zephyr,flash-buf-max-size = <272>;
+	zephyr,concat-buf-size = <264>;
+	zephyr,flash-buf-max-size = <264>;
 };
 
 / {
