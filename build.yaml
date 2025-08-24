@@ -12,3 +12,8 @@
 #     shield: reviung41
 #
 ---
+include:
+  - board: qaz_rp2040
+  - board: qaz_rp2040
+    snippet: zmk-usb-logging
+    artifact-name: qaz-rp2040-usb-logging
