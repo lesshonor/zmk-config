@@ -1,11 +1,36 @@
 manifest:
   remotes:
+    - name: oj
+      url-base: https://github.com/ojthetiny
+    - name: jlw
+      url-base: https://github.com/josh-l-wang
+    - name: lesshonor
+      url-base: https://github.com/lesshonor
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
   projects:
+    - name: zmk-config
+      path: uwu-30-module
+      remote: oj
+      revision: master
+    - name: zmk-jlw-keyboards
+      remote: jlw
+      revision: main
+      #revision: pwm-leds
+      clone-depth: 1
+    - name: mechwild-zmk-keyboards
+      remote: lesshonor
+      revision: indicators
+      clone-depth: 1
+    - name: stewardship-zmk-module
+      remote: lesshonor
+      revision: main
+      clone-depth: 1
     - name: zmk
       remote: zmkfirmware
       revision: main
-      import: app/west.yml
+      clone-depth: 1
+      import:
+        file: app/west.yml
   self:
     path: config
