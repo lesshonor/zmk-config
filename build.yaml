@@ -1,32 +1,36 @@
 ---
 include:
   - board: s40nc
-  - board: le_jlwffre
-  - board: uwu30
-  - board: qaz_rp2040
-  - board: pillbug
-    shield: waka60
-  - board: pillbug
+  #- board: le_jlwffre
+  #- board: uwu30
+  #- board: qaz_rp2040
+  - board: humble40
+  - board: gb34r2_nrf52833
+  #- board: pillbug
+  #  shield: waka60
+  - board: blackpill_f401cc
     shield: bb40
-  - board: pillbug
+  - board: pillbug@0.1
     shield: bb40
     cmake-args: "'-DCONFIG_ZMK_KEYBOARD_NAME=\"BB40 (Alien)\"'"
     artifact-name: bb40-alien
-  - board: pillbug
-    shield: bb40
-    cmake-args: "'-DCONFIG_ZMK_KEYBOARD_NAME=\"BB40 (Pink)\"'"
-    artifact-name: bb40-pink
-  - board: pillbug
-    shield: bb40
-    cmake-args: "'-DCONFIG_ZMK_KEYBOARD_NAME=\"BB40 (Serika)\"'"
-    artifact-name: bb40-serika
+  #- board: pillbug
+  #  shield: bb40
+  #  cmake-args: "'-DCONFIG_ZMK_KEYBOARD_NAME=\"BB40 (Pink)\"'"
+  #  artifact-name: bb40-pink
+  #- board: pillbug
+  #  shield: bb40
+  #  cmake-args: "'-DCONFIG_ZMK_KEYBOARD_NAME=\"BB40 (Serika)\"'"
+  #  artifact-name: bb40-serika
+  - board: blackpill_f401cc
+    shield: settings_reset
   - board: pillbug
     shield: settings_reset
   - board: s40nc
     shield: settings_reset
-  - board: le_jlwffre
-    shield: settings_reset
-  - board: uwu30
-    shield: settings_reset
-  - board: qaz_rp2040
-    shield: settings_reset
+  #- board: le_jlwffre
+  #  shield: settings_reset
+  #- board: uwu30
+  #  shield: settings_reset
+  #- board: qaz_rp2040
+  #  shield: settings_reset
