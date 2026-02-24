@@ -24,7 +24,7 @@ manifest:
       clone-depth: 1
     - name: stewardship-zmk-module
       remote: lesshonor
-      revision: main
+      revision: new-zephyr
       clone-depth: 1
     - name: zmk
       remote: zmkfirmware

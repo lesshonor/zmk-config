@@ -45,13 +45,13 @@
         combo_bspc {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <30 31>;
-            layers = <0 2 3 4 5 6>;
+            layers = <0 3 4 5 6 7>;
             bindings = <&kp BSPC>;
         };
         combo_del {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <30 31>;
-            layers = <1>;
+            layers = <2>;
             bindings = <&kp DEL>;
         };
         combo_caps {
